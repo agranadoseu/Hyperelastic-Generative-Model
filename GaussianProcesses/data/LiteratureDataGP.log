@@ -1,0 +1,136 @@
+Data
+(73, 100)
+(73, 100)
+(73, 100)
+(73, 100)
+(73, 100)
+(71, 6)
+(71,)
+(73,)
+(73,)
+(73,)
+(73,)
+Cases:
+GM/E [27 29 31 33 36] WM/E [26 28 30 32 34] NH/E [37] AB/E [35]
+GM/L [8] WM/L [7] NH/L [ 0  1  4  5 12 13 14 15 16 17 18 19 21 22 24 25] AB/L [ 2  3  9 10 11 20 23]
+GM/H [55 56 59 60 63 64 67 68 71 72] WM/H [53 54 57 58 61 62 65 66 69 70] NH/H [38 39 40 41 42 43 44 45 46 47 48 49 50 51 52] AB/H [6]
+CreateGroup:  [27 29 31 33 36] 5
+CreateGroup:  [26 28 30 32 34] 5
+CreateGroup:  [37] 1
+CreateGroup:  [35] 1
+CreateGroup:  [8] 1
+CreateGroup:  [7] 1
+CreateGroup:  [ 0  1  4  5 12 13 14 15 16 17 18 19 21 22 24 25] 16
+CreateGroup:  [ 2  3  9 10 11 20 23] 7
+CreateGroup:  [55 56 59 60 63 64 67 68 71 72] 10
+CreateGroup:  [53 54 57 58 61 62 65 66 69 70] 10
+CreateGroup:  [38 39 40 41 42 43 44 45 46 47 48 49 50 51 52] 15
+CreateGroup:  [6] 1
+Nx:  [5, 5, 1, 1, 1, 1, 16, 7, 10, 10, 15, 1]
+GPlog12 :: X1=12 y1=12
+kernel =   Mat32.       |  value  |  constraints  |  priors
+  variance     |    1.0  |      +ve      |        
+  lengthscale  |    1.0  |      +ve      |        
+icm =   ICM.               |    value  |  constraints  |  priors
+  Mat32.variance     |      1.0  |   +ve fixed   |        
+  Mat32.lengthscale  |      1.0  |      +ve      |        
+  B.W                |  (12, 1)  |               |        
+  B.kappa            |    (12,)  |      +ve      |        
+model = 
+Name : gp
+Objective : 22514.004737203533
+Number of Parameters : 38
+Number of Optimization Parameters : 37
+Updates : True
+Parameters:
+  gp.                                     |    value  |  constraints  |  priors
+  ICM.Mat32.variance                      |      1.0  |   +ve fixed   |        
+  ICM.Mat32.lengthscale                   |      1.0  |      +ve      |        
+  ICM.B.W                                 |  (12, 1)  |               |        
+  ICM.B.kappa                             |    (12,)  |      +ve      |        
+  mixed_noise.Gaussian_noise_0.variance   |      1.0  |      +ve      |        
+  mixed_noise.Gaussian_noise_1.variance   |      1.0  |      +ve      |        
+  mixed_noise.Gaussian_noise_2.variance   |      1.0  |      +ve      |        
+  mixed_noise.Gaussian_noise_3.variance   |      1.0  |      +ve      |        
+  mixed_noise.Gaussian_noise_4.variance   |      1.0  |      +ve      |        
+  mixed_noise.Gaussian_noise_5.variance   |      1.0  |      +ve      |        
+  mixed_noise.Gaussian_noise_6.variance   |      1.0  |      +ve      |        
+  mixed_noise.Gaussian_noise_7.variance   |      1.0  |      +ve      |        
+  mixed_noise.Gaussian_noise_8.variance   |      1.0  |      +ve      |        
+  mixed_noise.Gaussian_noise_9.variance   |      1.0  |      +ve      |        
+  mixed_noise.Gaussian_noise_10.variance  |      1.0  |      +ve      |        
+  mixed_noise.Gaussian_noise_11.variance  |      1.0  |      +ve      |        
+Running L-BFGS-B (Scipy implementation) Code:
+  runtime   i        f              |g|        
+    30s42  000002   1.864251e+04   1.076659e+07 
+ 02m03s40  000008   9.525977e+03   6.687665e+05 
+ 06m20s19  000024   7.810227e+03   5.685711e+04 
+ 17m29s22  000067   7.498746e+03   1.513862e+03 
+ 49m34s03  000189   7.206930e+03   2.115870e+04 
+ 56m46s38  000217   7.142902e+03   1.991549e+03 
+ 01h08m04  000261   7.126542e+03   3.317681e+01 
+ 03h09m01  000728   7.097959e+03   8.071071e+00 
+ 03h24m35  000792   7.097956e+03   5.352351e+00 
+Runtime:  03h24m35
+Optimization status: Errorb'ABNORMAL_TERMINATION_IN_LNSRCH'
+
+12 tasks
+Optimised model 
+Name : gp
+Objective : 7097.956699532818
+Number of Parameters : 38
+Number of Optimization Parameters : 37
+Updates : True
+Parameters:
+  gp.                                     |                  value  |  constraints  |  priors
+  ICM.Mat32.variance                      |                    1.0  |   +ve fixed   |        
+  ICM.Mat32.lengthscale                   |    0.17952169955079822  |      +ve      |        
+  ICM.B.W                                 |                (12, 1)  |               |        
+  ICM.B.kappa                             |                  (12,)  |      +ve      |        
+  mixed_noise.Gaussian_noise_0.variance   |    0.24272512320447853  |      +ve      |        
+  mixed_noise.Gaussian_noise_1.variance   |      0.566190401362921  |      +ve      |        
+  mixed_noise.Gaussian_noise_2.variance   |  5.578118337410581e-38  |      +ve      |        
+  mixed_noise.Gaussian_noise_3.variance   |  8.466414713667301e-35  |      +ve      |        
+  mixed_noise.Gaussian_noise_4.variance   |  8.932379730694029e-39  |      +ve      |        
+  mixed_noise.Gaussian_noise_5.variance   |  4.202208156935254e-43  |      +ve      |        
+  mixed_noise.Gaussian_noise_6.variance   |      1.327083170861652  |      +ve      |        
+  mixed_noise.Gaussian_noise_7.variance   |      9.588988041207974  |      +ve      |        
+  mixed_noise.Gaussian_noise_8.variance   |      0.132735809653072  |      +ve      |        
+  mixed_noise.Gaussian_noise_9.variance   |    0.10883199151558419  |      +ve      |        
+  mixed_noise.Gaussian_noise_10.variance  |     0.8052518071933565  |      +ve      |        
+  mixed_noise.Gaussian_noise_11.variance  |  4.906019170470766e-27  |      +ve      |        
+
+
+B=  B.     |    value  |  constraints  |  priors
+  W      |  (12, 1)  |               |        
+  kappa  |    (12,)  |      +ve      |         
+
+W=  index    |  gp.ICM.B.W  |  constraints  |  priors
+  [0 0]    |  135.62322427  |               |        
+  [1 0]    |  140.19158171  |               |        
+  [2 0]    |  139.05693858  |               |        
+  [3 0]    |  144.09968574  |               |        
+  [4 0]    |  132.12044589  |               |        
+  [5 0]    |  130.63714967  |               |        
+  [6 0]    |  132.04573204  |               |        
+  [7 0]    |  111.48076940  |               |        
+  [8 0]    |  162.41944820  |               |        
+  [9 0]    |  150.77294496  |               |        
+  [10  0]  |  1.14076632  |               |        
+  [11  0]  |  142.69312541  |               |         
+
+K=  index  |  gp.ICM.B.kappa  |  constraints  |  priors
+  [0]    |      0.54158171  |      +ve      |        
+  [1]    |      1.31525233  |      +ve      |        
+  [2]    |      0.59139393  |      +ve      |        
+  [3]    |      4.79552641  |      +ve      |        
+  [4]    |      0.06334509  |      +ve      |        
+  [5]    |      0.00000000  |      +ve      |        
+  [6]    |      0.09639896  |      +ve      |        
+  [7]    |      0.24035776  |      +ve      |        
+  [8]    |      9.95848127  |      +ve      |        
+  [9]    |     18.40784199  |      +ve      |        
+  [10]   |     47.73588957  |      +ve      |        
+  [11]   |      1.41217720  |      +ve      |        
+
+Process finished with exit code 0
